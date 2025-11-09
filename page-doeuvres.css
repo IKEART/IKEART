@@ -1,0 +1,130 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overscroll-behavior: none; /* empêche l'effet de rebond au scroll */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+main {
+  width: 100vw; /* 100vw = 100% d'une largeur d'écran */
+  display: flex;
+}
+
+.content {
+  width: 100%;
+  margin-right: 15%;
+  background-color: white;
+}
+
+.content .logo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .logo img {
+  width: 150px;
+  height: auto;
+  margin: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, auto);
+}
+
+.images_gallery {
+  width: 100%;
+  height: 415px;
+  background-color: pink;
+}
+
+.images_gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .images_gallery {
+    width: 100%;
+    height: 115px;
+  }
+}
+
+.right {
+  width: 15%;
+  height: 100vh;
+  background-color: #d9d9d9;
+  position: fixed;
+  right: 0;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute; /* position absolute pour se placer par rapport au parent (right) */
+  top: 40px;
+  right: 20px;
+}
+
+.line_burger {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+}
+
+.link_container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-right: 20px;
+}
+
+.link_line_1 {
+  display: flex;
+  gap: 40px;
+}
+
+.link_line_2 input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.link_line_3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: end;
+  gap: 3px;
+}
+
+.link_line_3 a {
+  width: 100%;
+  text-align: end;
+}
+
+.link_line_3 a:hover {
+  text-decoration: underline;
+}
