@@ -1,0 +1,272 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overscroll-behavior: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.container_left_mid {
+  width: 100%;
+  display: flex;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  main {
+    height: max-content;
+    overflow: auto;
+  }
+  .container_left_mid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mid {
+    width: 85% !important;
+    height: fit-content !important;
+  }
+
+  .images_gallery {
+    height: 150px !important;
+  }
+
+  .line_1 {
+    height: 150px !important;
+  }
+
+  .line_2 {
+    height: 150px !important;
+  }
+
+  .left {
+    width: 100vw !important;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0;
+  }
+
+  .images_container {
+    height: 150px !important;
+    width: 100vw !important;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+
+  .images_container .image {
+    flex: 0 0 calc(100vw / 3);
+    height: 150px !important;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .image_1,
+  .image_2,
+  .image_3 {
+    width: calc(100vw / 3) !important;
+  }
+}
+.left {
+  width: 25%;
+  height: 100vh;
+  overflow: scroll;
+  margin: 0;
+}
+
+.images_container {
+  width: 100%;
+  height: 300vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.image_1,
+.image_2,
+.image_3 {
+  width: 100%;
+  height: 33%;
+}
+
+.image_1 {
+  background: url("./images/img_1.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_2 {
+  background: url("./images/img_2.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_3 {
+  background: url("./images/img_3.png") no-repeat center center;
+  background-size: cover;
+}
+
+.mid {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  margin: 0;
+}
+
+.mid .logo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mid .logo img {
+  width: 150px;
+  height: auto;
+  margin: 20px;
+}
+
+.gallery_container {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.line_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 312px;
+  width: 100%;
+}
+
+.image_gallery_1 {
+  width: 30%;
+  height: 100%;
+  background: url("./images/img_4.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_gallery_2 {
+  width: 25%;
+  height: 100%;
+  background: url("./images/img_7.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_gallery_3 {
+  width: 45%;
+  height: 100%;
+  background: url("./images/img_6.png") no-repeat center center;
+  background-size: cover;
+}
+
+.line_2 {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 412px;
+  width: 100%;
+}
+
+.image_gallery_4 {
+  width: 60%;
+  height: 100%;
+  background: url("./images/img_8.png") no-repeat center center;
+  background-size: cover;
+}
+.image_gallery_5 {
+  width: 40%;
+  height: 100%;
+  background: url("./images/img_5.png") no-repeat center center;
+  background-size: cover;
+}
+
+.right {
+  width: 15%;
+  right: 0;
+  height: 100vh;
+  background-color: #d9d9d9;
+  position: fixed;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.line_burger {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+}
+
+.link_container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-right: 20px;
+}
+
+.link_line_1 {
+  display: flex;
+  gap: 40px;
+}
+
+.link_line_2 input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.link_line_3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: end;
+  gap: 3px;
+}
+
+.link_line_3 a {
+  width: 100%;
+  text-align: end;
+}
+
+.link_line_3 a:hover {
+  text-decoration: underline;
+}
