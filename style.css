@@ -78,7 +78,13 @@ main {
 
   .image_1,
   .image_2,
-  .image_3 {
+  .image_3,
+  .image_22,
+  .image_14,
+  .image_28,
+  .image_23,
+  .image_25,
+  .image_12{
     width: calc(100vw / 3) !important;
   }
 }
@@ -101,7 +107,13 @@ main {
 
 .image_1,
 .image_2,
-.image_3 {
+.image_3
+.image_24,
+.image_14,
+.image_28,
+.image_23,
+.image_25,
+.image_12 {
   width: 100%;
   height: 33%;
 }
@@ -118,6 +130,36 @@ main {
 
 .image_3 {
   background: url("./images/img_3.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_28 {
+  background: url("./images/img_28.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_23 {
+  background: url("./images/img_23.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_24 {
+  background: url("./images/img_24.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_25 {
+  background: url("./images/img_25.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_14 {
+  background: url("./images/img_14.png") no-repeat center center;
+  background-size: cover;
+}
+
+.image_12 {
+  background: url("./images/img_12.png") no-repeat center center;
   background-size: cover;
 }
 
