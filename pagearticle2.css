@@ -1,4 +1,5 @@
 
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -23,6 +24,7 @@ main {
   width: 85%;
   margin: 0;
   display: flex;
+  padding-right: 30px;
 }
 
 .img_1 {
@@ -57,13 +59,9 @@ main {
   justify-content: space-between;
 }
 
-.mid_top {
-  display: flex;
-}
-
 .text_content p {
   margin-top: 50px;
-  max-width: 500px;
+  max-width: 100%;
   font-size: 24px;
 }
 
@@ -73,6 +71,10 @@ main {
     font-family: 'Roboto', sans-serif;
     margin-top: 7px; 
     margin-bottom: 7px;
+}
+
+.logo{
+  margin-left: 350px;
 }
 
 .mid_bottom {
@@ -100,17 +102,14 @@ main {
 }
 
 .sim_img_1 {
-  background: url("images/img_34.png") no-repeat center center;
+  background: url("images/img_23.png") no-repeat center center;
   background-size: cover;
 }
 .sim_img_2 {
-  background: url("images/img_35.png") no-repeat center center;
+  background: url("images/img_18.png") no-repeat center center;
   background-size: cover;
 }
-.sim_img_3 {
-  background: url("images/img_36.png") no-repeat center center;
-  background-size: cover;
-}
+
 .right {
   width: 15%;
   height: 100vh;
