@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -11,6 +13,7 @@ a {
   font-size: 14px;
 }
 
+
 main {
   width: 100vw; /* 100vw = 100% d'une largeur d'écran */
   height: 100vh; /* 100vh = 100% d'une hauteur d'écran */
@@ -21,17 +24,24 @@ main {
   width: 85%;
   margin: 0;
   display: flex;
+  padding-right: 30px;
 }
 
 .img_1 {
-  background: url("images/img_17.png") no-repeat center center;
+  background: url("images/img_pgo3-1.JPG") no-repeat center center;
   background-size: cover;
 }
 
 .img_2 {
-  background: url("images/img_43.jpg") no-repeat center center;
+  background: url("images/img_pgo3-2.jpg") no-repeat center center;
   background-size: cover;
 }
+
+.img_3 {
+  background: url("images/img_pgo3-3.jpg") no-repeat center center;
+  background-size: cover;
+}
+
 
 .left {
   margin: 0;
@@ -44,7 +54,7 @@ main {
 
 .img_left {
   width: 100%;
-  height: 50%;
+  height: 33.33vh;
 }
 
 .mid {
@@ -55,14 +65,22 @@ main {
   justify-content: space-between;
 }
 
-.mid_top {
-  display: flex;
-}
-
 .text_content p {
   margin-top: 50px;
-  max-width: 500px;
+  max-width: 100%;
   font-size: 24px;
+}
+
+.description p {
+    font-size: 15px; 
+    font-weight: 300; 
+    font-family: 'Roboto', sans-serif;
+    margin-top: 7px; 
+    margin-bottom: 7px;
+}
+
+.logo{
+  margin-left: 350px;
 }
 
 .mid_bottom {
@@ -90,17 +108,14 @@ main {
 }
 
 .sim_img_1 {
-  background: url("images/img_34.png") no-repeat center center;
+  background: url("images/img_23.png") no-repeat center center;
   background-size: cover;
 }
 .sim_img_2 {
-  background: url("images/img_35.png") no-repeat center center;
+  background: url("images/img_18.png") no-repeat center center;
   background-size: cover;
 }
-.sim_img_3 {
-  background: url("images/img_36.png") no-repeat center center;
-  background-size: cover;
-}
+
 .right {
   width: 15%;
   height: 100vh;
