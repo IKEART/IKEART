@@ -182,7 +182,7 @@ main {
 .mid .logo img {
   width: 150px;
   height: auto;
-  margin: 20px;
+  margin-right: 100px;
 }
 
 .gallery_container {
