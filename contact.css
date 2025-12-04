@@ -18,9 +18,9 @@ main {
 }
 
 .contact_block {
-  width: 85%;
+  width: 80%;
   margin: 40px;
-  margin-right: calc(15% + 40px);
+  margin-right: calc(20% + 40px);
 }
 
 .top_contact {
