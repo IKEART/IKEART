@@ -138,10 +138,13 @@ label {
 }
 
 .right {
+  margin: 0;
   width: 20%;
-  height: 100vh;
+  height: 100%;
   background-color: #d9d9d9;
   position: fixed; /* positon parent pour la position absolute (le burger) */
+  right: 0;
+  top: 0;
   right: 0;
 }
 
