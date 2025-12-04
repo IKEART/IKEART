@@ -62,15 +62,15 @@ address a {
 }
 
 .row {
-  margin-top: 40px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
 }
 
 .row input {
   margin-top: 5px;
-  height: 50px;
-  width: 250px;
+  height: 40px;
+  width: 220px;
 }
 
 .field {
@@ -80,14 +80,14 @@ address a {
 }
 
 .full {
-  margin-top: 40px;
+  margin-top: 25px;
   width: 100%;
 }
 
 .full textarea {
   margin-top: 5px;
   width: 100%;
-  height: 250px;
+  height: 150px;
 }
 
 label {
@@ -96,7 +96,7 @@ label {
 }
 
 .note {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .submit_btn {
@@ -105,8 +105,8 @@ label {
   background-color: black;
   color: white;
   border: none;
-  padding: 15px;
-  font-size: 20px;
+  padding: 12px;
+  font-size: 18px;
   cursor: pointer;
 }
 
